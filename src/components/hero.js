@@ -10,6 +10,7 @@ export default ({ data }) => (
         <Img
           className={styles.heroImage}
           alt={data.name}
+          fluid={data.heroImage.fluid}
         />
         <p style={{ position: "relative", top: '-15px', color: '#fff' }}>
           <span>Creative Technologist</span>

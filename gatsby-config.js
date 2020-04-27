@@ -25,9 +25,9 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Circular Blog',
   },
-  pathPrefix: '/gatsby-contentful-starter',
+  pathPrefix: '/circularblog',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
