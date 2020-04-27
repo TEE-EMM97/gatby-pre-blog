@@ -20,7 +20,6 @@ class BlogPostTemplate extends React.Component {
             <Img
               className={heroStyles.heroImage}
               alt={post.title}
-              fluid={post.heroImage.fluid}
             />
           </div>
           <div className="wrapper">
