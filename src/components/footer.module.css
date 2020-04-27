@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+
+}
+
+.navigationItem {
+  display: inline-flex;
+  align-items: right;
+  text-align: right;
+  margin: 0 1em;
+}
+
+.navigationItem h1 {
+  font-size: 1.98818rem; 
+  font-weight: bold;
+  color: #fff;
+}
+
+.navigationItem a {
+  color: currentColor;
+}
