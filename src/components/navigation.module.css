@@ -7,7 +7,8 @@
 .navigationItem {
   display: inline-flex;
   align-items: left;
-  margin: .85em 1em;
+  margin-top: .85em;
+  padding-left: 1em;
 }
 
 .navigationItem h1 {
@@ -30,4 +31,39 @@
 .nav-wrapper img {
   width: 148px;
   height: 30px;
+}
+
+@media (max-width: 575.98px) { 
+  .navigationItem {
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media (min-width: 576px) { 
+  .navigationItem {
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media (min-width: 767px) { 
+  .navigationItem {
+    position: relative;
+    right: 17px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .navigationItem {
+    position: relative;
+    right: 8px;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .navigationItem {
+    position: relative;
+    right: 0px;
+  }
 }
