@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './navigation.module.css'
-import logo from './logo.png';
+import logo from './logo.png'
 
 export default () => (
   <nav role="navigation">
     <ul className={styles.navigation}>
-      <div className="nav-wrapper">
+      <div className={styles.navWrapper}>
         <li className={styles.navigationItem}>
           <a href="https://www.lovecircular.com" target='_blank'>
-            <img src={logo} alt="" style={{ height: "30px", width: '148px', marginTop:15, marginBottom: '10px', marginLeft:'-4px' }} />
+            <img src={logo} alt="" style={{height: 30, width: 148, margin: 0}}/>
           </a>
         </li>
       </div>

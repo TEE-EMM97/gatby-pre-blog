@@ -2,15 +2,12 @@
   display: flex;
   justify-content: left;
   list-style: none;
-  padding: 0;
-  margin: 0;
-
 }
 
 .navigationItem {
   display: inline-flex;
   align-items: left;
-  margin: 0 1em;
+  margin: .85em 1em;
 }
 
 .navigationItem h1 {
@@ -21,4 +18,16 @@
 
 .navigationItem a {
   color: currentColor;
+}
+
+.navWrapper {
+  width: calc(100% - 10vmin);
+  margin: 0 auto;
+  padding: 1vmin 0;
+  background-color: rgb(25, 25, 25);
+}
+
+.nav-wrapper img {
+  width: 148px;
+  height: 30px;
 }
