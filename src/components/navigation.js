@@ -1,15 +1,19 @@
 import React from 'react'
-import styles from './navigation.module.css'
+import stylesTwo from './navigation.module.css'
 import logo from './logo.png'
+import base from './base.css'
+import styles from './article-preview.module.css'
 
 export default () => (
-  <nav role="navigation" className={styles.navWrapper}>
-    <ul className={styles.navigation}>
-        <li className={styles.navigationItem}>
+  <div className='wrapper' style={{padding:0}}>
+  <nav role="navigation" className={stylesTwo.navWrapper}>
+    <ul className={stylesTwo.navigation}>
+        <li className={styles.previewTitle}>
           <a href="https://www.lovecircular.com" target='_blank'>
-            <img src={logo} alt="" style={{height: 30, width: 148, margin: 0}}/>
+            <img src={logo} alt="" />
           </a>
         </li>
     </ul>
   </nav>
+  </div>
 )

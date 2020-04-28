@@ -2,13 +2,12 @@
   display: flex;
   justify-content: left;
   list-style: none;
+  padding: 0;
 }
 
 .navigationItem {
   display: inline-flex;
   align-items: left;
-  margin-top: .002em;
-  padding-left: 1em;
 }
 
 .navigationItem h1 {
@@ -24,7 +23,6 @@
 .navWrapper {
   width: calc(100% - 10vmin);
   margin: 0 auto;
-  padding: 1vmin 0;
   background-color: rgb(25, 25, 25);
 }
 
@@ -33,37 +31,9 @@
   height: 30px;
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 600.98px) { 
   .navigationItem {
     position: relative;
-    right: 30px;
-  }
-}
-
-@media (min-width: 576px) { 
-  .navigationItem {
-    position: relative;
-    right: 30px;
-  }
-}
-
-@media (min-width: 767px) { 
-  .navigationItem {
-    position: relative;
-    right: 17px;
-  }
-}
-
-@media (min-width: 992px) { 
-  .navigationItem {
-    position: relative;
-    right: 8px;
-  }
-}
-
-@media (min-width: 1200px) { 
-  .navigationItem {
-    position: relative;
-    right: 0px;
+    right: 14px;
   }
 }
