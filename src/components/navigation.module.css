@@ -8,6 +8,7 @@
 .navigationItem {
   display: inline-flex;
   align-items: left;
+  margin-top: .002em;
 }
 
 .navigationItem h1 {
