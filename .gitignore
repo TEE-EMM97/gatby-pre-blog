@@ -64,6 +64,6 @@ public
 .cache
 
 # secrets
-# .contentful.json
+.contentful.json
 .env*
 !.env.example
