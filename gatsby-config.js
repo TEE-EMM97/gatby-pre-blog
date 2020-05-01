@@ -5,6 +5,7 @@ require('dotenv').config({
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  refreshToken: process.env.ENABLE_GATSBY_REFRESH_ENDPOINT
 }
 
 // if you want to use the preview API please define
@@ -15,7 +16,7 @@ if (process.env.CONTENTFUL_HOST) {
   contentfulConfig.host = process.env.CONTENTFUL_HOST
 }
 
-const { spaceId, accessToken } = contentfulConfig
+const { spaceId, accessToken, refreshToken } = contentfulConfig
 
 if (!spaceId || !accessToken) {
   throw new Error(
@@ -33,6 +34,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-node-reload',
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,

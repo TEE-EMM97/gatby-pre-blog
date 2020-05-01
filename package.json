@@ -8,6 +8,7 @@
     "core-js": "3",
     "dotenv": "^8.2.0",
     "gatsby-image": "^2.3.4",
+    "gatsby-plugin-node-reload": "^1.1.0",
     "gatsby-plugin-react-helmet": "^3.2.4",
     "gatsby-plugin-sharp": "^2.5.6",
     "gatsby-source-contentful": "^2.2.9",
@@ -45,6 +46,7 @@
     "setup": "node ./bin/setup.js",
     "start": "npm run develop",
     "heroku-postbuild": "gatsby build",
-    "cleanup-repository": "yarn remove contentful-import chalk inquirer && node ./bin/cleanup.js && rimraf bin contentful"
+    "cleanup-repository": "yarn remove contentful-import chalk inquirer && node ./bin/cleanup.js && rimraf bin contentful",
+    "refresh": "curl -X POST https://circular-blog-pre.herokuapp.com/__refresh"
   }
 }
