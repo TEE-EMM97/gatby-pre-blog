@@ -1,5 +1,5 @@
 import React from "react"
 
-export default function Home() (
+export default function ___refresh() (
   <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
 )
