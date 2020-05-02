@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import styles from './blog.module.css'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
+import Img from 'gatsby-image'
 
 class BlogIndex extends React.Component {
   render() {
