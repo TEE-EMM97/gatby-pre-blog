@@ -5,7 +5,6 @@ require('dotenv').config({
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  managementToken: process.env.CTF_CMA_ACCESS_TOKEN
 }
 
 // if you want to use the preview API please define
@@ -16,9 +15,9 @@ if (process.env.CONTENTFUL_HOST) {
   contentfulConfig.host = process.env.CONTENTFUL_HOST
 }
 
-const { spaceId, accessToken, managementToken } = contentfulConfig
+const { spaceId, accessToken, refreshToken } = contentfulConfig
 
-if (!spaceId || !accessToken || !managementToken) {
+if (!spaceId || !accessToken) {
   throw new Error(
     'Contentful spaceId and the access token need to be provided.'
   )
