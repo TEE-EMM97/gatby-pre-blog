@@ -15,7 +15,7 @@ if (process.env.CONTENTFUL_HOST) {
   contentfulConfig.host = process.env.CONTENTFUL_HOST
 }
 
-const { spaceId, accessToken, refreshToken } = contentfulConfig
+const { spaceId, accessToken } = contentfulConfig
 
 if (!spaceId || !accessToken) {
   throw new Error(
