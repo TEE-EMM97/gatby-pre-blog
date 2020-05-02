@@ -5,7 +5,6 @@ require('dotenv').config({
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  refreshToken: process.env.ENABLE_GATSBY_REFRESH_ENDPOINT
 }
 
 // if you want to use the preview API please define
