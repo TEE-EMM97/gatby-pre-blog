@@ -33,6 +33,11 @@ class BlogPostTemplate extends React.Component {
             <meta name="twitter:site" content="@lovecircular_"/>
           </Helmet>
           <div className={heroStyles.hero}>
+            <Img
+              className={heroStyles.heroImage}
+              alt={post.title}
+              fluid={post.heroImage.fluid}
+            />
           </div>
           <div className="wrapper">
             <h1 className="section-headline">{post.title}</h1>
