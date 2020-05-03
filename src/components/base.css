@@ -5,6 +5,7 @@ body {
   font-size: 1em;
   line-height: 1.65;
   margin: 0;
+
 }
 
 img {
@@ -17,10 +18,19 @@ h2,
 h3 {
   font-size: 2em;
   font-weight: normal;
+    text-decoration: none;
 }
+
 
 a {
   color: currentColor;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: #ED4763 !important;
+  transition: all 0.3s;
 }
 
 .wrapper {
