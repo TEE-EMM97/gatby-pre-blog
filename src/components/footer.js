@@ -7,12 +7,12 @@ export default () => (
     <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
         <a href="https://twitter.com/lovecircular_" target="_blank">
-          <p>twitter</p>
+          <p>Twitter</p>
         </a>
       </li>
       <li className={styles.navigationItem}>
         <a href="https://twitter.com/lovecircular_" target="_blank">
-          <p>instagram</p>
+          <p>Instagram</p>
         </a>
       </li>
     </ul>
