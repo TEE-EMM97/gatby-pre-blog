@@ -10,7 +10,7 @@ export default () => (
       <ul className={stylesTwo.navigation}>
         <li className={styles.previewTitle}>
           <a href="https://www.lovecircular.com" target='_blank'>
-            <img src={logo} alt="" />
+            <img src="https://circular-static.s3.eu-west-2.amazonaws.com/circular_logo_black.png" alt="" />
           </a>
         </li>
       </ul>

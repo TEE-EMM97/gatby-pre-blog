@@ -5,7 +5,7 @@ body {
   font-size: 1em;
   line-height: 1.65;
   margin: 0;
-
+  color: #191919;
 }
 
 img {
@@ -17,10 +17,13 @@ h1,
 h2,
 h3 {
   font-size: 2em;
-  font-weight: normal;
+  font-weight: 700;
     text-decoration: none;
 }
 
+p {
+  font-size: 1rem;
+}
 
 a {
   color: currentColor;
@@ -36,9 +39,14 @@ a:hover {
 .wrapper {
   width: calc(100% - 10vmin);
   margin: 0 auto;
-  padding: 5vmin 0;
+  padding: 3vmin 0 10vmin 0;
 }
 
+.blog-wrapper {
+  width: calc(100% - 10vmin);
+  margin: 0 auto;
+  padding: 3vmin 0 6vmin 0;
+}
 /**
  * article grid
  */
@@ -47,8 +55,8 @@ a:hover {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 1vmin;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 3fr));
+  grid-gap: 4vmin;
 }
 
 /**

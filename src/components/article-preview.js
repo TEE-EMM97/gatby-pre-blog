@@ -11,7 +11,7 @@ export default ({ article }) => (
       <h3 className={styles.previewTitle} style={{ color:'#ED4763'}}>
      {article.title}
     </h3>
-    <small>{article.publishDate}</small>
+    <p>{article.publishDate}</p>
     <div
       dangerouslySetInnerHTML={{
         __html: article.description.childMarkdownRemark.html,

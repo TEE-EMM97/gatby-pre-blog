@@ -20,6 +20,21 @@
   max-height: 400px;
 }
 
+.heroBackButton {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    text-align: center;
+    width: 10rem;
+    height: 50px;
+    border: 0;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #EE4762;
+}
+
 .heroDetails {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);

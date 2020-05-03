@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
@@ -14,23 +14,50 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div>
+        <div className="blog-wrapper">
           <Helmet title={`${post.title} | ${siteTitle}`}>
             <meta charSet="utf-8" />
             <link rel="icon" href="favicon.png" />
-            <meta name="description" content="We train and mentor aspiring UX designers to get them job ready in 90 days."/>
-            <meta property="og:type" content="website"/>
-            <meta property="og:url" content="https://twitter.com/lovecircular_"/>
-            <meta property="og:title" content="Circular – Learn UX Design through mentorship"/>
-            <meta property="og:description" content="We train and mentor aspiring UX designers to get them job ready in 90 days."/>
-            <meta property="og:image" content="https://circular-static.s3.eu-west-2.amazonaws.com/twitter-card.png"/>
+            <meta
+              name="description"
+              content="We train and mentor aspiring UX designers to get them job ready in 90 days."
+            />
+            <meta property="og:type" content="website" />
+            <meta
+              property="og:url"
+              content="https://twitter.com/lovecircular_"
+            />
+            <meta
+              property="og:title"
+              content="Circular – Learn UX Design through mentorship"
+            />
+            <meta
+              property="og:description"
+              content="We train and mentor aspiring UX designers to get them job ready in 90 days."
+            />
+            <meta
+              property="og:image"
+              content="https://circular-static.s3.eu-west-2.amazonaws.com/twitter-card.png"
+            />
 
-            <meta property="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:url" content="https://twitter.com/lovecircular_"/>
-            <meta property="twitter:title" content="Circular – Learn UX Design through mentorship"/>
-            <meta property="twitter:description" content="We train and mentor aspiring UX designers to get them job ready in 90 days."/>
-            <meta property="twitter:image" content="https://circular-static.s3.eu-west-2.amazonaws.com/twitter-card.png"/>
-            <meta name="twitter:site" content="@lovecircular_"/>
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta
+              property="twitter:url"
+              content="https://twitter.com/lovecircular_"
+            />
+            <meta
+              property="twitter:title"
+              content="Circular – Learn UX Design through mentorship"
+            />
+            <meta
+              property="twitter:description"
+              content="We train and mentor aspiring UX designers to get them job ready in 90 days."
+            />
+            <meta
+              property="twitter:image"
+              content="https://circular-static.s3.eu-west-2.amazonaws.com/twitter-card.png"
+            />
+            <meta name="twitter:site" content="@lovecircular_" />
           </Helmet>
           <div className={heroStyles.hero}>
             <Img
@@ -39,21 +66,28 @@ class BlogPostTemplate extends React.Component {
               fluid={post.heroImage.fluid}
             />
           </div>
-          <div className="wrapper">
-            <h1 className="section-headline">{post.title}</h1>
-            <p
-              style={{
-                display: 'block',
-              }}
-            >
-              {post.publishDate}
-            </p>
+          <h1 className="section-headline" style={{ paddingTop: '2rem' }}>
+            {post.title}
+          </h1>
+          <p
+            style={{
+              display: 'block',
+            }}
+          >
+            {post.publishDate}
+          </p>
+          <div style={{ fontSize: '1.125rem' }}>
             <div
               dangerouslySetInnerHTML={{
                 __html: post.body.childMarkdownRemark.html,
               }}
             />
           </div>
+          <Link to='/'>
+            <aside>
+              <button className={heroStyles.heroBackButton}>Go Back</button>
+            </aside>
+          </Link>
         </div>
       </Layout>
     )
