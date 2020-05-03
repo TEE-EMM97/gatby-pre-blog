@@ -25,15 +25,13 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Circular Blog – Learn UX Design through mentorship',
-    type: 'website',
-    url: 'https://twitter.com/lovecircular_',
-    type: 'website',
-    description:
-      'We train and mentor aspiring UX designers to get them job ready in 90 days.',
-    image:
-      'https://circular-static.s3.eu-west-2.amazonaws.com/twitter-card.png',
-    icon: 'favicon.png',
+    title: "Circular Blog – Learn UX Design through mentorship",
+    type: "website",
+    url: "https://twitter.com/lovecircular_",
+    description:"We train and mentor aspiring UX designers to get them job ready in 90 days.",
+    image:"https://circular-static.s3.eu-west-2.amazonaws.com/twitter-card.png",
+    twitterUsername: "@lovecircular__",
+    author: "CircularHQ",
   },
   pathPrefix: '/circularblog',
   plugins: [
