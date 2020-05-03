@@ -10,6 +10,11 @@ export default () => (
           <p>twitter</p>
         </a>
       </li>
+      <li className={styles.navigationItem}>
+        <a href="https://twitter.com/lovecircular_" target="_blank">
+          <p>instagram</p>
+        </a>
+      </li>
     </ul>
   </nav>
 )

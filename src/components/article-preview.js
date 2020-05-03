@@ -5,10 +5,10 @@ import Img from 'gatsby-image'
 import styles from './article-preview.module.css'
 
 export default ({ article }) => (
-  <div className={styles.preview}>
-    {/* <Img alt="" fluid={article.heroImage.fluid} /> */}
     <Link to={`/blog/${article.slug}`}>
-      <h3 className={styles.previewTitle} style={{ color: '#ED4763'}}>
+  <div className={styles.preview}>
+    <Img alt="" fluid={article.heroImage.fluid} />
+    <h3 className={styles.previewTitle}>
      {article.title}
     </h3>
     <small>{article.publishDate}</small>
@@ -16,9 +16,7 @@ export default ({ article }) => (
       dangerouslySetInnerHTML={{
         __html: article.description.childMarkdownRemark.html,
       }}
-        style={{ paddingBottom: '10px' }}
     />
-    </Link>
     <hr/>
     {article.tags &&
       article.tags.map(tag => (
@@ -27,4 +25,5 @@ export default ({ article }) => (
         </p>
       ))}
   </div>
+      </Link>
 )

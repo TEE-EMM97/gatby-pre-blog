@@ -4,8 +4,6 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-size: 1em;
   line-height: 1.65;
-  color: #fff;
-  background-color: rgb(25, 25, 25);
   margin: 0;
 }
 
@@ -23,19 +21,12 @@ h3 {
 
 a {
   color: currentColor;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ED4763 !important;
-  transition: all 0.3s;
 }
 
 .wrapper {
   width: calc(100% - 10vmin);
   margin: 0 auto;
   padding: 5vmin 0;
-  background-color: rgb(25, 25, 25);
 }
 
 /**
