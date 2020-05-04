@@ -5,15 +5,16 @@ import styles from './hero.module.css'
 
 export default ({ data }) => (
   <div className="wrapper">
-  <div className={styles.hero}>
-    <Img
-      className={styles.heroImage}
-      alt={data.name}
-      fluid={data.heroImage.fluid}
-    />
-    <div className={styles.heroDetails}>
-      <p>{data.shortBio.shortBio}</p>
+    <div className={styles.hero} style={{ backgroud: '#EE4762' }}>
+      <Img
+        className={styles.heroImage}
+        alt={data.name}
+        fluid={data.heroImage.fluid}
+        style={{width:'100%'}}
+      />
+      <div className={styles.heroDetails}>
+        <p>{data.shortBio.shortBio}</p>
+      </div>
     </div>
-  </div>
   </div>
 )

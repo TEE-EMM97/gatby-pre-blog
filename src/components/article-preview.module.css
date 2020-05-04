@@ -1,3 +1,7 @@
+.preview{
+  border-bottom: 2px solid #ccc;
+}
+
 .previewTitle {
   font-size: 1.5em;
 }
@@ -12,3 +16,10 @@
   border: 1px solid #A0A0A0;
   margin-right: .5em;
 }
+
+/* .tag:hover {
+  color: #ED4763 !important;
+  transition: all 0.3s;
+  border-radius: 2px;
+  border: 1px solid #ED4763;
+} */

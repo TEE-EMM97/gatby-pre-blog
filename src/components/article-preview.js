@@ -6,7 +6,7 @@ import styles from './article-preview.module.css'
 
 export default ({ article }) => (
     <Link to={`/blog/${article.slug}`}>
-  <div className={styles.preview}>
+  <div className={styles.preview} style={{paddingTop: 20, paddingBottom: 20}}>
     {/* <Img alt="" fluid={article.heroImage.fluid} /> */}
       <h3 className={styles.previewTitle} style={{ color:'#ED4763'}}>
      {article.title}
@@ -17,7 +17,6 @@ export default ({ article }) => (
         __html: article.description.childMarkdownRemark.html,
       }}
     />
-    <hr/>
     {article.tags &&
       article.tags.map(tag => (
         <p className={styles.tag} key={tag}>
